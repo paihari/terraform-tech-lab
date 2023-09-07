@@ -1,0 +1,12 @@
+provider "aws" {
+  region     = "eu-central-1"
+  access_key = "<<ACCESS_KEY>>"
+  secret_key = "<<ACCESS_SECRET>>"
+
+
+}
+
+resource "aws_eip" "remote-eip" {
+  vpc = true
+}
+

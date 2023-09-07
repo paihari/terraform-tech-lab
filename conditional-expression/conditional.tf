@@ -1,0 +1,26 @@
+provider "aws" {
+    region = "eu-central-1"
+    access_key = "<<ACCESS_KEY>>"
+    secret_key = "<<ACCESS_SECRET>>"
+
+  
+}
+
+resource "aws_instance" "ec2-1" {
+    ami = "ami-04e601abe3e1a910f"
+    instance_type = "t2.micro"
+    count = var.flag == true ? 2 : 1
+
+}
+
+resource "aws_instance" "ec2-2" {
+    ami = "ami-04e601abe3e1a910f"
+    instance_type = "t2.nano"
+    count = var.flag == false ? 2 : 1
+
+}
+
+
+variable "flag" {
+  
+}
