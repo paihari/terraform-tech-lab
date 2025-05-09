@@ -1,4 +1,4 @@
-# 🛠️ Terraform Tech Lab
+# 🛠️ Terraform Tech Lab 
 
 This repository is a structured, hands-on collection of **Terraform modules and exercises** designed to prepare for the **HashiCorp Certified: Terraform Associate** exam. It includes practical examples covering Terraform fundamentals, advanced patterns, and best practices using AWS infrastructure.
 
